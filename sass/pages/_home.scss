@@ -13,9 +13,9 @@
     background-image: linear-gradient(
         to right bottom,
         rgba($color-gold, 0.8),
-        rgba($color-primary-dark, 0.8)),
+        rgba($color-black, 0.8)),
     url(../img/nat-4.jpg);
-    padding: 20rem 0;
+    padding: 15rem 0;
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
@@ -35,9 +35,10 @@
     background-image: linear-gradient(
         to right bottom,
         rgba($color-silver, 0.8),
-        rgba($color-primary-dark, 0.8)),
+        rgba($color-black, 0.8)),
     url(../img/nat-4.jpg);
-    padding: 20rem 0;
+    padding: 15rem 0;
+    margin: 0 0 10rem 0;
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: 3rem;
@@ -73,7 +74,7 @@
 }
 
 .section-book {
-    margin-top: 20vh;
+    margin-top: 10vh;
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
@@ -107,9 +108,8 @@ url(../img/nat-10.jpg);
         rgba($color-white, .9) 100%),
 url(../img/nat-10.jpg);
     }
-
+/*
     &__form {
-        position: relative;
         width: 80%;
         padding: 6rem;
 
@@ -120,5 +120,6 @@ url(../img/nat-10.jpg);
         @include respond(tab-port) {
             width: 100%;
         }
-    }
+        
+    }*/
 }

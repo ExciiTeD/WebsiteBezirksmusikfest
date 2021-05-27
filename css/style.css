@@ -1137,8 +1137,8 @@ body {
 }
 
 .section-features1 {
-  background-image: linear-gradient(to right bottom, rgba(226, 176, 7, 0.8), rgba(44, 5, 5, 0.8)), url(../img/nat-4.jpg);
-  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(226, 176, 7, 0.8), rgba(0, 0, 0, 0.8)), url(../img/nat-4.jpg);
+  padding: 15rem 0;
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -1153,8 +1153,9 @@ body {
 }
 
 .section-features2 {
-  background-image: linear-gradient(to right bottom, rgba(196, 202, 206, 0.8), rgba(44, 5, 5, 0.8)), url(../img/nat-4.jpg);
-  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(196, 202, 206, 0.8), rgba(0, 0, 0, 0.8)), url(../img/nat-4.jpg);
+  padding: 15rem 0;
+  margin: 0 0 10rem 0;
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: 3rem;
@@ -1190,7 +1191,7 @@ body {
 }
 
 .section-book {
-  margin-top: 20vh;
+  margin-top: 10vh;
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #f1383b, #2c0505);
 }
@@ -1205,6 +1206,20 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  /*
+      &__form {
+          width: 80%;
+          padding: 6rem;
+
+          @include respond(tab-land) {
+              width: 65%;
+          }
+
+          @include respond(tab-port) {
+              width: 100%;
+          }
+
+      }*/
 }
 @media only screen and (max-width: 75em) {
   .book {
@@ -1215,21 +1230,6 @@ body {
 @media only screen and (max-width: 56.25em) {
   .book {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
-  }
-}
-.book__form {
-  position: relative;
-  width: 80%;
-  padding: 6rem;
-}
-@media only screen and (max-width: 75em) {
-  .book__form {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book__form {
-    width: 100%;
   }
 }
 
