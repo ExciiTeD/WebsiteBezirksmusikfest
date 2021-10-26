@@ -1,3 +1,6 @@
+body{
+    /**background-color: black;*/
+}
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
@@ -7,18 +10,39 @@
         padding: 20rem 0;
     }
 }
-
 .section-features1 {
 
-    background-image: linear-gradient(
+    background-image: /**linear-gradient(
         to right bottom,
-        rgba($color-gold, 0.8),
-        rgba($color-black, 0.8)),
-    url(../img/nat-4.jpg);
+        rgba($color-primary, 0.8),
+        rgba($color-black, 0.8)),**/
+    url(../../new_img/hauptsponsor.jpg);
     padding: 15rem 0;
     background-size: cover;
     transform: skewY(-7deg);
-    
+    margin: 0 0 10rem 0;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+
+}
+.section-features2 {
+
+    /*background-image: linear-gradient(
+        to right bottom,
+        rgba($color-gold, 0.8),
+        rgba($color-black, 0.8)),
+    url(../img/nat-4.jpg);*/
+    background-color: $color-primary;
+    padding: 15rem 0;
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin: 0 0 10rem 0;
 
     & > * {
         transform: skewY(7deg);
@@ -30,7 +54,52 @@
 
 }
 
-.section-features2 {
+.section-features3 {
+
+    /*background-image: linear-gradient(
+        to right bottom,
+        rgba($color-silver, 0.8),
+        rgba($color-black, 0.8)),
+    url(../img/nat-4.jpg);*/
+    background-color: $color-primary;
+    padding: 15rem 0;
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin: 0 0 10rem 0;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+
+}
+.section-features4 {
+
+    /*background-image: linear-gradient(
+        to right bottom,
+        rgba($color-platin, 0.8),
+        rgba($color-black, 0.8)),
+    url(../img/nat-4.jpg);*/
+    background-color: $color-primary;
+    padding: 15rem 0;
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin: 0 0 10rem 0;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+
+}
+/*
+.section-features3 {
 
     background-image: linear-gradient(
         to right bottom,
@@ -53,7 +122,7 @@
 
 }
 
-
+*/
 .section-tours {
     //background-color: $color-grey-light-1;
     padding: 1rem 0 8rem 0rem;

@@ -115,8 +115,7 @@ body {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  animation-delay: 3s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--main {
@@ -138,11 +137,11 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #A12325, #000000);
+  background-image: linear-gradient(to right, #2c0505, #2c0505);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -163,7 +162,6 @@ body {
     font-size: 2.5rem;
   }
 }
-
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -329,13 +327,13 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.85), rgba(44, 5, 5, 0.85));
 }
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, #A12325, #000000);
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.85), rgba(44, 5, 5, 0.85));
 }
 .card__side--back-3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.85), rgba(44, 5, 5, 0.85));
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -353,13 +351,13 @@ body {
   border-top-right-radius: 3px;
 }
 .card__picture--1 {
-  background-image: url(../../new_img/freitag.jpg);
+  background-image: url(../../new_img/KaiserMusikanten2.png);
 }
 .card__picture--2 {
-  background-image: url(../../new_img/samstag.jpg);
+  background-image: url(../../new_img/wbp.png);
 }
 .card__picture--3 {
-  background-image: url(../../new_img/sonntag.jpg);
+  background-image: url(../../new_img/pongauer.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -378,13 +376,13 @@ body {
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.85), rgba(44, 5, 5, 0.85));
 }
 .card__heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(161, 35, 37, 0.85), rgba(0, 0, 0, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.85), rgba(44, 5, 5, 0.85));
 }
 .card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.85), rgba(44, 5, 5, 0.85));
 }
 .card__details {
   padding: 3rem;
@@ -532,6 +530,10 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
+  /*
+  &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+  }*/
 }
 @media only screen and (max-width: 56.25em) {
   .feature-box {
@@ -542,7 +544,7 @@ body {
   font-size: 6rem;
   margin-bottom: 0.5rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #A12325, #000000);
+  background-image: linear-gradient(to right, #f1383b, #2c0505);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -550,9 +552,6 @@ body {
   .feature-box__icon {
     margin-bottom: 0;
   }
-}
-.feature-box:hover {
-  transform: translateY(-1.5rem) scale(1.03);
 }
 
 .form__group:not(:last-child) {
@@ -945,8 +944,8 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(161, 35, 37, 0.5), rgba(0, 0, 0, 0.8)), url(../../new_img/marschwertung.jpg);
-  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.5), rgba(44, 5, 5, 0.8)), url(../../new_img/hero1.PNG);
+  background-size: inherit;
   background-position: top;
   position: relative;
 }
@@ -959,7 +958,7 @@ body {
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .header {
-    background-image: linear-gradient(to right bottom, rgba(161, 35, 37, 0.8), rgba(0, 0, 0, 0.8)), url(../../new_img/marschwertung.jpg);
+    background-image: linear-gradient(to right bottom, rgba(241, 56, 59, 0.5), rgba(44, 5, 5, 0.8)), url(../../new_img/hero1.PNG);
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -1019,7 +1018,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#A12325, #000000);
+  background-image: radial-gradient(#f1383b, #2c0505);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -1125,6 +1124,10 @@ body {
   transform: rotate(-135deg);
 }
 
+body {
+  /**background-color: black;*/
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -1137,45 +1140,115 @@ body {
 }
 
 .section-features1 {
-  background-image: linear-gradient(to right bottom, rgba(226, 176, 7, 0.8), rgba(0, 0, 0, 0.8)), url(../img/nat-4.jpg);
-  padding: 20rem 0;
+  background-image: url(../../new_img/hauptsponsor.jpg);
+  padding: 15rem 0;
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -10rem;
+  margin: 0 0 10rem 0;
 }
 .section-features1 > * {
   transform: skewY(7deg);
 }
 @media only screen and (max-width: 56.25em) {
   .section-features1 {
-    padding: 10rem 0;
+    padding: 15rem 0;
   }
 }
 
 .section-features2 {
-  background-image: linear-gradient(to right bottom, rgba(196, 202, 206, 0.8), rgba(0, 0, 0, 0.8)), url(../img/nat-4.jpg);
-  padding: 20rem 0;
+  /*background-image: linear-gradient(
+      to right bottom,
+      rgba($color-gold, 0.8),
+      rgba($color-black, 0.8)),
+  url(../img/nat-4.jpg);*/
+  background-color: #A12325;
+  padding: 15rem 0;
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: 3rem;
+  margin: 0 0 10rem 0;
 }
 .section-features2 > * {
   transform: skewY(7deg);
 }
 @media only screen and (max-width: 56.25em) {
   .section-features2 {
-    padding: 10rem 0;
+    padding: 15rem 0;
   }
 }
 
+.section-features3 {
+  /*background-image: linear-gradient(
+      to right bottom,
+      rgba($color-silver, 0.8),
+      rgba($color-black, 0.8)),
+  url(../img/nat-4.jpg);*/
+  background-color: #A12325;
+  padding: 15rem 0;
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin: 0 0 10rem 0;
+}
+.section-features3 > * {
+  transform: skewY(7deg);
+}
+@media only screen and (max-width: 56.25em) {
+  .section-features3 {
+    padding: 15rem 0;
+  }
+}
+
+.section-features4 {
+  /*background-image: linear-gradient(
+      to right bottom,
+      rgba($color-platin, 0.8),
+      rgba($color-black, 0.8)),
+  url(../img/nat-4.jpg);*/
+  background-color: #A12325;
+  padding: 15rem 0;
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin: 0 0 10rem 0;
+}
+.section-features4 > * {
+  transform: skewY(7deg);
+}
+@media only screen and (max-width: 56.25em) {
+  .section-features4 {
+    padding: 15rem 0;
+  }
+}
+
+/*
+.section-features3 {
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-silver, 0.8),
+        rgba($color-black, 0.8)),
+    url(../img/nat-4.jpg);
+    padding: 15rem 0;
+    margin: 0 0 10rem 0;
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: 3rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+}
+
+*/
 .section-tours {
-  background-color: #f7f7f7;
-  padding: 25rem 0 20rem 0rem;
-  margin-top: -10rem;
+  padding: 1rem 0 8rem 0rem;
 }
 @media only screen and (max-width: 56.25em) {
   .section-tours {
-    padding: 20rem 0 15rem 0;
+    padding: 1rem 0 8rem 0;
   }
 }
 
@@ -1190,9 +1263,9 @@ body {
 }
 
 .section-book {
-  margin-top: 20vh;
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #A12325, #000000);
+  margin-top: 10vh;
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, #f1383b, #2c0505);
 }
 @media only screen and (max-width: 56.25em) {
   .section-book {
@@ -1201,34 +1274,34 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  /*
+      &__form {
+          width: 80%;
+          padding: 6rem;
+
+          @include respond(tab-land) {
+              width: 65%;
+          }
+
+          @include respond(tab-port) {
+              width: 100%;
+          }
+
+      }*/
 }
 @media only screen and (max-width: 75em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%);
     background-size: cover;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
-  }
-}
-.book__form {
-  width: 50%;
-  padding: 6rem;
-}
-@media only screen and (max-width: 75em) {
-  .book__form {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book__form {
-    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
   }
 }
 

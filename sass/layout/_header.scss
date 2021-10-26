@@ -4,8 +4,8 @@
         to right bottom,
         rgba($color-primary-light, 0.5),
         rgba($color-primary-dark, 0.8)),
-    url(../../new_img/marschwertung.jpg);
-    background-size: cover;
+    url(../../new_img/hero1.PNG);
+    background-size: inherit;
     background-position: top;
     position: relative;
     
@@ -21,9 +21,9 @@
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
-            rgba($color-primary-light, 0.8),
+            rgba($color-primary-light, 0.5),
             rgba($color-primary-dark, 0.8)),
-            url(../../new_img/marschwertung.jpg);
+            url(../../new_img/hero1.PNG);
     }
 
     @include respond(phone) {
