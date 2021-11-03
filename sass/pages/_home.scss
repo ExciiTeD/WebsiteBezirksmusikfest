@@ -1,5 +1,9 @@
 body{
-    /**background-color: black;*/
+    background-color: $color-white;
+    /*
+    background-image: url(../../new_img/back.jpg);
+    background-size: auto;
+    background-repeat: round;*/
 }
 .section-about {
     background-color: $color-grey-light-1;
@@ -32,13 +36,13 @@ body{
 
 }
 .section-features2 {
-
+    background-image: 
+    url(../../new_img/back.jpg);
     /*background-image: linear-gradient(
         to right bottom,
-        rgba($color-gold, 0.8),
-        rgba($color-black, 0.8)),
-    url(../img/nat-4.jpg);*/
-    background-color: $color-primary;
+        rgba($color-white, 1),
+        rgba($color-primary, 1));*/
+    //background-color: $color-primary;
     padding: 15rem 0;
     background-size: cover;
     transform: skewY(-7deg);
@@ -56,11 +60,8 @@ body{
 
 .section-features3 {
 
-    /*background-image: linear-gradient(
-        to right bottom,
-        rgba($color-silver, 0.8),
-        rgba($color-black, 0.8)),
-    url(../img/nat-4.jpg);*/
+    background-image: 
+    url(../../new_img/back.jpg);
     background-color: $color-primary;
     padding: 15rem 0;
     background-size: cover;
@@ -77,13 +78,14 @@ body{
 
 }
 .section-features4 {
-
+    background-image: 
+    url(../../new_img/back.jpg);
     /*background-image: linear-gradient(
         to right bottom,
         rgba($color-platin, 0.8),
         rgba($color-black, 0.8)),
-    url(../img/nat-4.jpg);*/
-    background-color: $color-primary;
+    url(../img/nat-4.jpg);
+    background-color: $color-primary;*/
     padding: 15rem 0;
     background-size: cover;
     transform: skewY(-7deg);

@@ -17,13 +17,14 @@
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .8);
 
         &--front {
-            background-color: $color-white;
+            background-color: $color-black;
         }
 
         &--back {
+            background-color: $color-black;
             transform: rotateY(180deg);
 
             &-1 {
@@ -121,7 +122,7 @@
 
     &__details {
         padding: 3rem;
-
+        background-color: $color-black;
         ul {
             list-style: none;
             width: 100%;
@@ -129,7 +130,7 @@
 
             li {
                 text-align: left;
-                font-size: 1.93rem;
+                font-size: 1.79rem;
                 font-weight: bold;
                 padding: 1rem;
 
@@ -176,7 +177,7 @@
 
         height: auto;
         border-radius: 3px;
-        background-color: $color-white;
+        background-color: $color-black;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         
         &__side {
