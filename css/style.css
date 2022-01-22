@@ -111,16 +111,22 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
+  letter-spacing: 2.5rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
 }
+@media only screen and (max-width: 56.25em) {
+  .heading-primary--main {
+    font-size: 5.5rem;
+    letter-spacing: 0.9rem;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .heading-primary--main {
-    letter-spacing: 1rem;
-    font-family: 5rem;
+    font-size: 4.8rem;
+    letter-spacing: 0.4rem;
   }
 }
 .heading-primary--sub {
@@ -1198,7 +1204,7 @@ body {
       to right bottom,
       rgba($color-white, 1),
       rgba($color-primary, 1));*/
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-size: cover;
   transform: skewY(-7deg);
   margin: 0 0 10rem 0;
@@ -1208,14 +1214,14 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-features2 {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 }
 
 .section-features3 {
   background-image: url(../../new_img/back.jpg);
   background-color: #a3221d;
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-size: cover;
   transform: skewY(-7deg);
   margin: 0 0 10rem 0;
@@ -1225,7 +1231,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-features3 {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 }
 
@@ -1237,7 +1243,7 @@ body {
       rgba($color-black, 0.8)),
   url(../img/nat-4.jpg);
   background-color: $color-primary;*/
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-size: cover;
   transform: skewY(-7deg);
   margin: 0 0 10rem 0;
@@ -1247,7 +1253,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-features4 {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 }
 
@@ -1297,7 +1303,8 @@ body {
 
 .section-book {
   margin-top: 10vh;
-  padding: 10rem 0;
+  padding: 5rem 0;
+  min-height: 400px;
   background-image: linear-gradient(to right bottom, #a3221d, #6d0000);
 }
 @media only screen and (max-width: 56.25em) {
@@ -1312,19 +1319,19 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(226, 226, 226, 0.2);
   /*
-      &__form {
-          width: 80%;
-          padding: 6rem;
+  &__form {
+      width: 80%;
+      padding: 6rem;
 
-          @include respond(tab-land) {
-              width: 65%;
-          }
+      @include respond(tab-land) {
+          width: 65%;
+      }
 
-          @include respond(tab-port) {
-              width: 100%;
-          }
+      @include respond(tab-port) {
+          width: 100%;
+      }
 
-      }*/
+  }*/
 }
 @media only screen and (max-width: 75em) {
   .book {
@@ -1336,6 +1343,38 @@ body {
   .book {
     background-image: linear-gradient(to right, rgba(245, 245, 247, 0.9) 0%, rgba(245, 245, 247, 0.9) 100%);
   }
+}
+
+#map {
+  height: 500px;
+  margin: 0 4rem 0 4rem;
+}
+
+.marker {
+  background-image: url("../../assets/pin.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-location {
+  background-image: url("../../assest/user_location.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 100px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
