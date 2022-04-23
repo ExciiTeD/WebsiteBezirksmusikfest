@@ -1764,32 +1764,54 @@ body {
     margin: 0 4rem 0 4rem;
 }
 
-.marker {
-    background-image: url("../assets/pin.png");
+.marker_tent {
+    background-image: url("../assest/stage.png");
     background-size: cover;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.user-location {
-    background-image: url("../assest/user_location.png");
+.marker_tent_2 {
+    background-image: url("../assest/music-festival.png");
     background-size: cover;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.marker_tent_3 {
+    background-image: url("../assest/music-festival-2.png");
+    background-size: cover;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.marker_marching {
+    background-image: url("../assest/parade.png");
+    background-size: cover;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .mapboxgl-popup {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .mapboxgl-popup-content {
+    font-weight: bold;
+    font-size: large;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: "Proxima Sans Regular", sans-serif;
 }
 
+a {color: #f5f5f7;}
 
 /*# sourceMappingURL=style.css.map */
